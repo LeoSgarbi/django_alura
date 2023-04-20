@@ -3,7 +3,7 @@ from galery.models import Photos
 
 
 def index(request):
-    photographys = Photos.objects.all()
+    photographys = Photos.objects.order_by("photo_date").filter(published=True)
     return render(request, 'galery/index.html', {"cards": photographys})
 
 def imagem(request, photo_id):
