@@ -9,10 +9,10 @@
                 <section class="tags">
                     <p class="tags__titulo">Busque por tags:</p>
                     <ul class="tags__lista">
-                        <li class="tags__tag">Retrato</li>
-                        <li class="tags__tag">Arquitetura</li>
-                        <li class="tags__tag">Documental</li>
-                        <li class="tags__tag">P&B</li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'PAISAGEM' %}" class="btn" style="color: #c9c9c9;">Paisagem</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'RETRATO' %}" class="btn" style="color: #c9c9c9;">Retrato</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'FOTOJORNALISMO' %}" class="btn" style="color: #c9c9c9;">Fotojornalismo</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'P&B' %}" class="btn" style="color: #c9c9c9;">P&B</a></li>
                     </ul>
                 </section>
                 <section class="galeria">
